@@ -1,4 +1,6 @@
 //decodeString(s)
+// This function works in the given test conditions
+// Assumptions: the input string is always in the form of "k[encoded_string] where encoded_string can have addditional square brackets"
 
 function repeatStr(str, times) {
   return str.repeat(times);
@@ -24,3 +26,7 @@ function decodeString(s) {
   }
   return result;
 }
+
+const inputArr = ['4[ab]', '2[b3[a]]']
+
+console.log(inputArr.map(item => decodeString(item)));
