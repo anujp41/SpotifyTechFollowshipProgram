@@ -14,8 +14,5 @@ function changePossibilities(amount, denominations) {
       result[currCoin] += result[remainder];
     }
   }
-  console.log(result)
   return result[amount];
 }
-
-console.log(changePossibilities(10, [1, 2, 3]));
